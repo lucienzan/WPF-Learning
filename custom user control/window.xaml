@@ -1,0 +1,17 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:userControls="clr-namespace:View.UserControl"
+        Width="525"
+        Height="350"
+        Title="Hello, World">
+</Window>
+<!-- //Custom user Control// -->
+<!--<Grid>
+        <Grid.RowDefinitions>
+                <RowDefinitions Height="70"></RowDefinitions>
+                <RowDefinitions></RowDefinitions>
+                <RowDefinitions Height="20"></RowDefinitions>
+        </Grid.RowDefinitions>
+       <userControls:MenuBar>
+</Grid>-->
+<!-- //Custom user Control// -->
