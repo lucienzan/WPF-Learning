@@ -15,6 +15,9 @@ using System.Windows.Shapes;
 
 namespace customtexboxcontrol.View.UserControl
 {
+    /*Rename subfolder in the view, don't give the name as UserControl
+    //it will thrown an error
+    */
     public sealed partial class ClearableTextBox : UserControl
     {
         public ClearableTextBox()
