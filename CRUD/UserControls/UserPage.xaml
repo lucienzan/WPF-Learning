@@ -29,14 +29,15 @@
                           CanUserResizeColumns="True" CanUserResizeRows="False" 
                           CanUserSortColumns="True"  Grid.Column="1"
                           AutoGenerateColumns="False" CanUserAddRows="False"
-                           Grid.Row="1" Grid.ColumnSpan="2" HorizontalContentAlignment="Center">
+                          Grid.Row="1" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" 
+                          >
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="First Name" Width="100" Binding="{Binding FirstName}" />
                         <DataGridTextColumn Header="Last Name" Width="100" Binding="{Binding LastName}"/>
-                        <DataGridTemplateColumn Header="Edit" >
+                        <DataGridTemplateColumn Header="Edit">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
-                                    <Button Content="Edit"/>
+                                    <Button Content="Edit" Click="BtnEdit"/>
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>

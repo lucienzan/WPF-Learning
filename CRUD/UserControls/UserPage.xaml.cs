@@ -36,7 +36,6 @@ namespace CRUD.UserControls
         private void GetAll()
         {
             Users = DbServices.userServices.GetAll();
-
         }
         #endregion
 
@@ -45,15 +44,45 @@ namespace CRUD.UserControls
         {
             UpdateSelectedEmployee();
 
-            if (DbServices.userServices.Insert(selectedEmployee))
+            if (FirstNameTextBox.Text.Length <= 0 && LastNameTextBox.Text.Length <= 0)
             {
-                MessageBox.Show("Employee Created!");
-                GetAll();
+                MessageBox.Show("Please fill your input field.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             else
             {
-                MessageBox.Show("An error occured while creating your employee.");
+
+                if (CreateEmployeeButton.Content == "Update Employee")
+                {
+                    if (DbServices.userServices.Update(selectedEmployee))
+                    {
+                        MessageBox.Show("Employee Update!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("An error occured while creating your employee.");
+                    }
+                }
+                else
+                {
+
+                    if (DbServices.userServices.Insert(selectedEmployee))
+                    {
+                        MessageBox.Show("Employee Created!");
+                        GetAll();
+                    }
+                    else
+                    {
+                        MessageBox.Show("An error occured while creating your employee.");
+                    }
+
+                }
             }
+            FirstNameTextBox.Clear();
+            LastNameTextBox.Clear();
+            CreateEmployeeButton.Content = "Create Employee";
+            Users = new ObservableCollection<Users>();
+            GetAll();
+            this.dgUserLists.ItemsSource = Users;
         }
         #endregion 
 
@@ -69,8 +98,11 @@ namespace CRUD.UserControls
                     bool success = DbServices.userServices.Delete(id);
                     if (success)
                     {
-                        MessageBox.Show("User is successfully deleted.");
+                        Users = DbServices.userServices.GetAll();
                         GetAll();
+                        this.dgUserLists.ItemsSource = Users;
+
+                        MessageBox.Show("User is successfully deleted.");
                     }
                 }
                 else
@@ -80,5 +112,17 @@ namespace CRUD.UserControls
             }
         }
         #endregion
+
+        #region BtnEdit
+        public void BtnEdit(object sender, RoutedEventArgs e)
+        {
+            var id = Convert.ToInt32(txtShowID.Text);
+            selectedEmployee = (Users)dgUserLists.SelectedItems[0];
+            FirstNameTextBox.Text = selectedEmployee.FirstName;
+            LastNameTextBox.Text = selectedEmployee.LastName;
+            CreateEmployeeButton.Content = "Update Employee";
+        }
+        #endregion
+
     }
 }
