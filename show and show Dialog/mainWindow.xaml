@@ -1,0 +1,16 @@
+<Window x:Class=".mainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:"
+        mc:Ignorable="d" WindowStyle="None" WindowStartupLocation="CenterOwner"
+        Title="mainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Button Content="Normal" Click="NormalBtn" Width="100" />
+            <Button Content="Normal" Click="ModalBtn" Width="100" />
+            <TextBox Name="txtInput" />
+        </StackPanel>
+    </Grid>
+</Window>
