@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TheinZan\\Desktop\\OJT\\CRUD\\CRUD.csproj": {}
+    "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\CRUD\\CRUD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TheinZan\\Desktop\\OJT\\CRUD\\CRUD.csproj": {
+    "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\CRUD\\CRUD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TheinZan\\Desktop\\OJT\\CRUD\\CRUD.csproj",
+        "projectUniqueName": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\CRUD\\CRUD.csproj",
         "projectName": "CRUD",
-        "projectPath": "C:\\Users\\TheinZan\\Desktop\\OJT\\CRUD\\CRUD.csproj",
+        "projectPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\CRUD\\CRUD.csproj",
         "packagesPath": "C:\\Users\\TheinZan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TheinZan\\Desktop\\OJT\\CRUD\\obj\\",
+        "outputPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\CRUD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TheinZan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,7 +22,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {

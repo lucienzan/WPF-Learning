@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:CRUD.UserControls"
+             xmlns:local="clr-namespace:CRUD.UserControls" xmlns:model="clr-namespace:CRUD.Model" d:DataContext="{d:DesignInstance Type=model:Users}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -23,7 +23,32 @@
                     <ColumnDefinition Width="12*"/>
                 </Grid.ColumnDefinitions>
                 <Label Content="Current Employees" FontSize="25" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="txtShowID" Visibility="Hidden" Text="{Binding ElementName=dgUserLists,Path=SelectedItem.Id}"></TextBlock>
 
+                <DataGrid x:Name="dgUserLists"  CanUserReorderColumns="True" 
+                          CanUserResizeColumns="True" CanUserResizeRows="False" 
+                          CanUserSortColumns="True"  Grid.Column="1"
+                          AutoGenerateColumns="False" CanUserAddRows="False"
+                           Grid.Row="1" Grid.ColumnSpan="2" HorizontalContentAlignment="Center">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="First Name" Width="100" Binding="{Binding FirstName}" />
+                        <DataGridTextColumn Header="Last Name" Width="100" Binding="{Binding LastName}"/>
+                        <DataGridTemplateColumn Header="Edit" >
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="Edit"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Delete" >
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="Delete" Click="BtnDelete" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
                 <Grid Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="1*"/>
@@ -33,10 +58,7 @@
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
-                    <!--<Button x:Name="ReadEmployeesButton" FontSize="20" Content="Read Employees" Grid.Column="2" Margin="10" Click="ReadEmployeesButton_Click"/>-->
-                    <Button x:Name="CreateEmployeeButton" FontSize="20" Content="Create Employee" Margin="10" Grid.Column="1" Click="CreateEmployeeButton_Click"/>
-                    <!--<Button x:Name="UpdateEmployeeButton" FontSize="20" Content="Update Employee" Grid.Column="3" Margin="10" Click="UpdateEmployeeButton_Click"/>
-                    <Button x:Name="DeleteEmployeeButton" FontSize="20" Content="Delete Employee" Grid.Column="4" Margin="10" Click="DeleteEmployeeButton_Click"/>-->
+                    <Button x:Name="CreateEmployeeButton" FontSize="20" Content="Create Employee" Margin="10" Grid.Column="1" Click="CreateEmployeeButtonClick"/>
                 </Grid>
                 <Label Content="Employees" FontSize="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Column="1" Foreground="#FF0432FF"/>
                 <Grid Grid.Column="1" Margin="10,0,0,0" Grid.Row="2" Grid.ColumnSpan="2">
