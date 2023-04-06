@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TheinZan\\Desktop\\OJT\\Command\\Command.csproj": {}
+    "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\Command\\Command.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TheinZan\\Desktop\\OJT\\Command\\Command.csproj": {
+    "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\Command\\Command.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TheinZan\\Desktop\\OJT\\Command\\Command.csproj",
+        "projectUniqueName": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\Command\\Command.csproj",
         "projectName": "Command",
-        "projectPath": "C:\\Users\\TheinZan\\Desktop\\OJT\\Command\\Command.csproj",
+        "projectPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\Command\\Command.csproj",
         "packagesPath": "C:\\Users\\TheinZan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TheinZan\\Desktop\\OJT\\Command\\obj\\",
+        "outputPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\Command\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TheinZan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

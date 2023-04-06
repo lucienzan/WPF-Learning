@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Nh11Oenldxy62vSdbK2lLmOEetFmhr1zsLzWH2A2kS3sHV+ZplMTqnUiecB9Nj4Ezrng4ZgP+AUUEupa3mbm4Q==",
+  "dgSpecHash": "oHoqGXXuB1A9QUgvOGVNYK0sKa59+THNY2O9AI0CEwN2nPmaZC/V1Pf8605oLe4ZsHYcGs5zdMmKV5OT3/rWJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\TheinZan\\Desktop\\OJT\\Command\\Command.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\Command\\Command.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TheinZan\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\TheinZan\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
