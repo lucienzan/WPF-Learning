@@ -1,0 +1,20 @@
+﻿<Window x:Class="Convert.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Convert"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="300">
+    <Window.Resources>
+        <local:YesOrNoConverter x:Key="YesOrNoConverter"/>
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <TextBox Width="100" Height="30" Name="tbInput" VerticalContentAlignment="Center"/>
+            <TextBlock Text="Current value is: " HorizontalAlignment="Center" />
+            <TextBlock Text="{Binding ElementName=tbInput, Path=Text, Converter={StaticResource YesOrNoConverter} }" />
+            <CheckBox IsChecked="{Binding ElementName=tbInput , Path=Text, Converter={StaticResource YesOrNoConverter}}" Content="Yes" />
+        </StackPanel>
+    </Grid>
+</Window>

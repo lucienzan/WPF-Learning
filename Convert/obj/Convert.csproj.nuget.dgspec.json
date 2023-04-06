@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\Command\\Command.csproj": {}
+    "C:\\Users\\TheinZan\\Desktop\\OJT\\Convert\\Convert.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\Command\\Command.csproj": {
+    "C:\\Users\\TheinZan\\Desktop\\OJT\\Convert\\Convert.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\Command\\Command.csproj",
-        "projectName": "Command",
-        "projectPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\Command\\Command.csproj",
+        "projectUniqueName": "C:\\Users\\TheinZan\\Desktop\\OJT\\Convert\\Convert.csproj",
+        "projectName": "Convert",
+        "projectPath": "C:\\Users\\TheinZan\\Desktop\\OJT\\Convert\\Convert.csproj",
         "packagesPath": "C:\\Users\\TheinZan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\Command\\obj\\",
+        "outputPath": "C:\\Users\\TheinZan\\Desktop\\OJT\\Convert\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TheinZan\\AppData\\Roaming\\NuGet\\NuGet.Config",
