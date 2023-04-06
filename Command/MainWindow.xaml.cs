@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Win32;
+using System.IO;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Command
 {
@@ -45,6 +35,53 @@ namespace Command
             txtEditor.Paste();
         }
 
+        private void ExitCommandCanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
+        }
+
+        public void ExitExecute(object sender, ExecutedRoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown(); 
+        }
+
+        public void SaveCommandCanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
+        }
         
+        public void SaveExecute(object sender, ExecutedRoutedEventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = " Text Files(*.txt)| *.txt" ;
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                File.WriteAllText(saveFileDialog.FileName, txtEditor.Text);
+            }
+        }
+    }
+    public static class CustomCommands
+    {
+        public static readonly RoutedUICommand Exit = new RoutedUICommand
+            (
+                "Exit",
+                "Exit",
+                typeof(CustomCommands),
+                new InputGestureCollection()
+                {
+                        new KeyGesture(Key.F4, ModifierKeys.Alt)
+                }
+            );
+
+        public static readonly RoutedUICommand Save = new RoutedUICommand
+            (
+                "Save",
+                "Save",
+                typeof(CustomCommands),
+                new InputGestureCollection()
+                {
+                        new KeyGesture(Key.S, ModifierKeys.Control)
+                }
+            );
     }
 }
