@@ -23,3 +23,5 @@ C:\Users\TheinZan\Desktop\Wpf\WPF-Learning\FlowDocuments\obj\Debug\net6.0-window
 C:\Users\TheinZan\Desktop\Wpf\WPF-Learning\FlowDocuments\obj\Debug\net6.0-windows\PageViewer.baml
 C:\Users\TheinZan\Desktop\Wpf\WPF-Learning\FlowDocuments\obj\Debug\net6.0-windows\Reader.g.cs
 C:\Users\TheinZan\Desktop\Wpf\WPF-Learning\FlowDocuments\obj\Debug\net6.0-windows\Reader.baml
+C:\Users\TheinZan\Desktop\Wpf\WPF-Learning\FlowDocuments\obj\Debug\net6.0-windows\RichTextEditor.g.cs
+C:\Users\TheinZan\Desktop\Wpf\WPF-Learning\FlowDocuments\obj\Debug\net6.0-windows\RichTextEditor.baml
