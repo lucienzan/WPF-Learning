@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\TheinZan\Desktop\Wpf\WPF-Learning\FlowDocuments\App.xaml
-11407045341
+41096055476
 
-51103080929
+8-1270214581
 194101785492
-MainWindow.xaml;
+MainWindow.xaml;PageViewer.xaml;Reader.xaml;RichTextEditor.xaml;
 
-False
+True
 
