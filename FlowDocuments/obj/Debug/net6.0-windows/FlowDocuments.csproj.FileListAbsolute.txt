@@ -19,3 +19,5 @@ C:\Users\TheinZan\Desktop\Wpf\WPF-Learning\FlowDocuments\obj\Debug\net6.0-window
 C:\Users\TheinZan\Desktop\Wpf\WPF-Learning\FlowDocuments\obj\Debug\net6.0-windows\FlowDocuments.pdb
 C:\Users\TheinZan\Desktop\Wpf\WPF-Learning\FlowDocuments\obj\Debug\net6.0-windows\FlowDocuments.genruntimeconfig.cache
 C:\Users\TheinZan\Desktop\Wpf\WPF-Learning\FlowDocuments\obj\Debug\net6.0-windows\ref\FlowDocuments.dll
+C:\Users\TheinZan\Desktop\Wpf\WPF-Learning\FlowDocuments\obj\Debug\net6.0-windows\PageViewer.g.cs
+C:\Users\TheinZan\Desktop\Wpf\WPF-Learning\FlowDocuments\obj\Debug\net6.0-windows\PageViewer.baml
