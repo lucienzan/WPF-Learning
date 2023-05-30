@@ -8,7 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Photo\92de4ec7c4ff443294766adc13fc308a20230530104303.png" />
+    <None Remove="Photo\ea8fff01d1df4b1ead840789035c50ea20230530103018.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Photo\92de4ec7c4ff443294766adc13fc308a20230530104303.png" />
+    <Resource Include="Photo\ea8fff01d1df4b1ead840789035c50ea20230530103018.png" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows.Media;
 
 namespace CRUD.Model
 {
@@ -32,6 +33,29 @@ namespace CRUD.Model
             set { 
 				_LastName = value;
                 OnPropertyChanged();
+            }
+        }
+
+		private string _profile;
+
+		public string Profile
+		{
+			get { return _profile; }
+			set {
+				_profile = value; 
+				OnPropertyChanged(nameof(Profile));
+			   }
+		}
+
+        private ImageSource imageSource;
+
+        public ImageSource ImageSource
+        {
+            get { return imageSource; }
+            set
+            {
+                imageSource = value;
+                OnPropertyChanged(nameof(ImageSource));
             }
         }
 

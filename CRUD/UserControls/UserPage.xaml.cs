@@ -1,7 +1,11 @@
 ﻿using CRUD.Model;
 using CRUD.Services;
+using Microsoft.Win32;
 using System;
 using System.Collections.ObjectModel;
+using System.IO;
+using System.Reflection;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -124,5 +128,37 @@ namespace CRUD.UserControls
         }
         #endregion
 
+        private void profileBtn(object sender, RoutedEventArgs e)
+        {
+            var currentPath = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+            var fileIndex = currentPath.IndexOf("bin");
+            var realPath = (string)currentPath.Substring(0, fileIndex) + @"Photo\";
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Photo files (*.png)|*.png| Photo File (*.jpeg) | *.jpeg| Photo File (*.jpg) | *.jpg";
+            openFileDialog.RestoreDirectory = true;
+            bool? success = openFileDialog.ShowDialog();
+            if (success == true)
+            {
+                if (!Directory.Exists(realPath))
+                {
+                    DirectoryInfo di = Directory.CreateDirectory(realPath);
+
+                }
+                string fileName = Path.GetFileName(openFileDialog.FileName);
+                string uniqueFile =   Guid.NewGuid()+ DateTime.Now.ToString();
+                string result = Regex.Replace(uniqueFile, "[^a-zA-Z0-9]", "");
+                // Using string manipulation methods
+                char[] specialChars = { '!', '@', '#', '$', '%', ':', '-', '_', '/' };
+                foreach (char c in specialChars)
+                {
+                    uniqueFile = uniqueFile.Replace(c.ToString(), "");
+                }
+                string extension = Path.GetExtension(fileName);
+                uniqueFile = uniqueFile.Replace(" ", "")+extension; 
+                selectedEmployee.Profile = uniqueFile;
+                string fileSavePath = Path.Combine(realPath, uniqueFile);
+                File.Copy(openFileDialog.FileName, fileSavePath, true);
+            }
+        }
     }
 }

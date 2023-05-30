@@ -36,10 +36,11 @@ namespace CRUD.Services
                         conn.Open();
                     }
                     //create command and add the query and connection as parameters
-                    SqlCommand cmd = new SqlCommand("INSERT INTO Users (FirstName, LastName) VALUES (@firstname, @lastname)", conn);
+                    SqlCommand cmd = new SqlCommand("INSERT INTO Users (FirstName, LastName, Profile) VALUES (@firstname, @lastname, @profile)", conn);
                     //Add parameters to the query. Its important to use parameters to avoid SQL injections
                     cmd.Parameters.AddWithValue("@firstname", user.FirstName);
                     cmd.Parameters.AddWithValue("@lastname", user.LastName);
+                    cmd.Parameters.AddWithValue("@profile", user.Profile);
                     //Execute command
                     cmd.ExecuteNonQuery();
                     sqlCmd.Connection = conn;
@@ -82,13 +83,11 @@ namespace CRUD.Services
                     //Read the data and store them in the collection
                     while (dataReader.Read())
                     {
-                        //creates the Employee object
                         Users user = new Users();
-                        //sets the Employee's properties
                         user.Id = Convert.ToInt32(dataReader["ID"]);
                         user.FirstName = Convert.ToString(dataReader["FirstName"]);
                         user.LastName = Convert.ToString(dataReader["LastName"]);
-                        //adds the employee to the collection
+                        user.Profile = @"pack://application:,,,/CRUD;component/Photo/" + Convert.ToString(dataReader["Profile"]);
                         employees.Add(user);
                     }
                     //close Data Reader
@@ -106,7 +105,6 @@ namespace CRUD.Services
             }
             return null;
         }
-
         public bool Update(Users user)
         {
 

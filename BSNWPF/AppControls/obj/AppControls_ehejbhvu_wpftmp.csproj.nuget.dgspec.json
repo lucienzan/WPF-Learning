@@ -1,0 +1,264 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\AppControls\\AppControls.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\AppControls\\AppControls.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\AppControls\\AppControls.csproj",
+        "projectName": "AppControls",
+        "projectPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\AppControls\\AppControls.csproj",
+        "packagesPath": "C:\\Users\\TheinZan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\AppControls\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\TheinZan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\AppLibrary\\AppLibrary.csproj": {
+                "projectPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\AppLibrary\\AppLibrary.csproj"
+              },
+              "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\CommonLibrary\\CommonLibrary.csproj": {
+                "projectPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\CommonLibrary\\CommonLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\AppLibrary\\AppLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\AppLibrary\\AppLibrary.csproj",
+        "projectName": "AppLibrary",
+        "projectPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\AppLibrary\\AppLibrary.csproj",
+        "packagesPath": "C:\\Users\\TheinZan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\AppLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\TheinZan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\CommonLibrary\\CommonLibrary.csproj": {
+                "projectPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\CommonLibrary\\CommonLibrary.csproj"
+              },
+              "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\Model\\Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\CommonLibrary\\CommonLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\CommonLibrary\\CommonLibrary.csproj",
+        "projectName": "CommonLibrary",
+        "projectPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\CommonLibrary\\CommonLibrary.csproj",
+        "packagesPath": "C:\\Users\\TheinZan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\CommonLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\TheinZan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\Model\\Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\TheinZan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\TheinZan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

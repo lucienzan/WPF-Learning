@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "yMXjFa+Ztmyk4Bo2pSvSQ11XHAYk+qMXfLGZ4gOtHNhk/Y6Ub/KAEHsQV3KaVGRhfO2hc4L1r6hRrPz8XVZiQg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\TheinZan\\Desktop\\Wpf\\WPF-Learning\\BSNWPF\\CommonLibrary\\CommonLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TheinZan\\.nuget\\packages\\nlog\\5.1.1\\nlog.5.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
